@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: Arial, helvetica, sans-serif;
 }
 
 body {
@@ -125,6 +124,7 @@ button {
 }
 
 #resultado {
+  color: #c5c6d0;
   margin-top: 2rem;
   padding: 2rem;
   border-radius: 0.5rem;
