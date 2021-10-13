@@ -11,28 +11,40 @@
   </head>
   <body>
     <div class="container">
-      <h1>Churrascomentro</h1>
-      <input
-        id="adultos"
-        name="adultos"
-        type="number"
-        placeholder="Quantidade de Adultos"
-      />
-      <input
-        id="crianças"
-        name="crianças"
-        type="number"
-        placeholder="Quantidade de Crianças"
-      />
-      <input
-        id="duracao"
-        name="duracao"
-        type="number"
-        placeholder="Duração (h)"
-      />
-      <button>Calcular</button>
+      <div class="content">
+        <h1>Saiba quanta comida e bebida vai precisar!</h1>
+        <img
+          class="background-img"
+          src="img/ruben-bagues-xX980isuPHs-unsplash.jpg"
+          alt=""
+        />
+      </div>
+      <div class="box-calc">
+        <h1>Churrascomentro</h1>
+        <input
+          id="adultos"
+          name="adultos"
+          type="number"
+          placeholder="Quantidade de Adultos"
+        />
+        <input
+          id="criancas"
+          name="crianças"
+          type="number"
+          placeholder="Quantidade de Crianças"
+        />
+        <input
+          id="duracao"
+          name="duracao"
+          type="number"
+          placeholder="Duração (h)"
+        />
+        <button onclick="calcular()">Calcular</button>
 
-      <div id="resultado"></div>
+        <div id="resultado"></div>
+      </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
