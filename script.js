@@ -11,8 +11,6 @@ let inputDuracao = document.getElementById('duracao')
 let resultado = document.getElementById('resultado')
 
 function calcular() {
-  console.log('calculando')
-
   let adultos = inputAdultos.value
   let criancas = inputCriancas.value
   let duracao = inputDuracao.value
@@ -23,7 +21,8 @@ function calcular() {
   let qtdeTotalBebidas =
     bebidasPP(duracao) * adultos + (bebidasPP(duracao) / 2) * criancas
 
-  resultado.innerHTML = `<p>${qtdeTotalCarne / 1000} KG de Carne</p>`
+  resultado.innerHTML = `<h3>Você vai precisar de:</h3 >`
+  resultado.innerHTML += `<p>${qtdeTotalCarne / 1000} KG de Carne</p>`
   resultado.innerHTML += `<p>${Math.ceil(
     qtdeTotalCerveja / 355
   )} latas de Cerveja</p>`
